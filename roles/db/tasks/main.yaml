@@ -1,14 +1,14 @@
 
 - name: install mysql server
   ansible.builtin.dnf:
-  - name: mysql-server
-    state: latest
+   name: mysql-server
+   state: latest
 
 - name: start and enable mysql server
   ansible.builtin.service:
-  - name: mysqld
-    state: started
-    enabled: yes
+   name: mysqld
+   state: started
+   enabled: yes
   
 - name: install python dependencies to connect mysql
   ansible.builtin.pip:
