@@ -27,9 +27,8 @@
 
 - name: copy the configaration file
   ansible.builtin.template:
-   src: roles/frontend/templates/expense.conf.j2
+   src: expense.conf.j2
    dest: /etc/nginx/default.d/expense.conf
-   remote_src: yes
   # notify:
   # - restart nginx
 
