@@ -37,8 +37,9 @@
 
 - name: copy the backend service code
   ansible.builtin.copy:
-    src: backend.service.j2
-    dest: /etc/systemd/system/backend.service
+   src: backend.service.j2
+   dest: /etc/systemd/system/backend.service
+  #  remote_src: yes
 
 - name: install mysql
   ansible.builtin.dnf:
