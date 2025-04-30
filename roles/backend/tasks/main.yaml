@@ -53,7 +53,7 @@
    executable: pip3.9
 
 - name: load the schema
-  community.mysql.my_db:
+  community.mysql.mysql_db:
     login_user: "{{login_user}}"
     login_password: "{{ login_password }}"
     login_host: "{{ login_host }}"
